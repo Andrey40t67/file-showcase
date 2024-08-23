@@ -1,0 +1,106 @@
+# file-showcase<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Showcase</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            text-align: center;
+        }
+        .file-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .file-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .file-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .file-item h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #3498db;
+        }
+        .file-item p {
+            font-size: 1em;
+            color: #777;
+            margin-bottom: 20px;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .download-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>File Showcase</h1>
+    <div class="file-list">
+        <div class="file-item">
+            <h2>Удалялка.py</h2>
+            <p>Скрипт для удаления программ и скрытия файлов.</p>
+            <a href="files/Удалялка.py" class="download-btn" download>Скачать</a>
+        </div>
+        <div class="file-item">
+            <h2>Удалялка — копия.py</h2>
+            <p>Копия скрипта для удаления программ и скрытия файлов.</p>
+            <a href="files/Удалялка — копия.py" class="download-btn" download>Скачать</a>
+        </div>
+        <div class="file-item">
+            <h2>Tret.py</h2>
+            <p>Дополнительный скрипт для управления программами.</p>
+            <a href="files/Tret.py" class="download-btn" download>Скачать</a>
+        </div>
+        <div class="file-item">
+            <h2>secure_app.py</h2>
+            <p>Приложение для защиты системы с авторизацией.</p>
+            <a href="files/secure_app.py" class="download-btn" download>Скачать</a>
+        </div>
+        <div class="file-item">
+            <h2>hacker_dashboard.py</h2>
+            <p>Панель управления с различными функциями для разработчиков.</p>
+            <a href="files/hacker_dashboard.py" class="download-btn" download>Скачать</a>
+        </div>
+        <div class="file-item">
+            <h2>E366.py</h2>
+            <p>Дополнительный скрипт для управления системой.</p>
+            <a href="files/E366.py" class="download-btn" download>Скачать</a>
+        </div>
+    </div>
+</body>
+</html>
